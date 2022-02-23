@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <div class="header">
+            <h1 id="value"></h1>
+        </div>
+
+        <div class="body">
+            <button class="calculator-button calculator-extra" id="button-ArrowLeft" onclick="back()">&lt;</button>
+            <button class="calculator-button calculator-extra" id="button-ArrowRight" onclick="front()">&gt;</button>
+            <button class="calculator-button calculator-extra" id="button-c" onclick="clearVal()">C</button>
+            <button class="calculator-button calculator-extra" id="button-backspace" onclick="del()">⌫</button>
+            <br>
+
+            <button class="calculator-button calculator-number" id="button-7" onclick="number(7)">7</button>
+            <button class="calculator-button calculator-number" id="button-8" onclick="number(8)">8</button>
+            <button class="calculator-button calculator-number" id="button-9" onclick="number(9)">9</button>
+            <button class="calculator-button calculator-operation" id="button-/" onclick="number('/')">/</button>
+            <br>
+
+            <button class="calculator-button calculator-number" id="button-4" onclick="number(4)">4</button>
+            <button class="calculator-button calculator-number" id="button-5" onclick="number(5)">5</button>
+            <button class="calculator-button calculator-number" id="button-6" onclick="number(6)">6</button>
+            <button class="calculator-button calculator-operation" id="button-*" onclick="number('*')">*</button>
+            <br>
+
+            <button class="calculator-button calculator-number" id="button-1" onclick="number(1)">1</button>
+            <button class="calculator-button calculator-number" id="button-2" onclick="number(2)">2</button>
+            <button class="calculator-button calculator-number" id="button-3" onclick="number(3)">3</button>
+            <button class="calculator-button calculator-operation" id="button--" onclick="number('-')">-</button>
+            <br>
+
+            <button class="calculator-button calculator-number" id="button-0" onclick="number(0)">0</button>
+            <button class="calculator-button calculator-number" id="button-." onclick="number('.')">.</button>
+            <button class="calculator-button calculator-operation" id="button-=" onclick="calculate()">=</button>
+            <button class="calculator-button calculator-operation" id="button-+" onclick="number('+')">+</button>
+        </div>
+    </div>
+</body>
+</html>
